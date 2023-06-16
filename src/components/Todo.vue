@@ -98,7 +98,7 @@ onMounted(() => {
                         </div>
                     </div>
                 </div>
-                <div class="card mb-2" v-else="todo" v-for="(task,index) in todo" :key="index" :class="{'bg-success text-light':task.done, 'bg-secondary':task.edit}">
+                <div class="card mb-2" v-else="todo" v-for="(task,index) in todo" :key="index" :class="{'bg-success text-light':task.done, 'bg-warning':task.edit}">
                     <div class="card-body todo_body">
                         <div class="todo_task">
                             <h5>{{task.text}}</h5>
